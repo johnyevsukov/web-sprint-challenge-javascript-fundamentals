@@ -28,14 +28,28 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+    .forEach will go through a list and preform some sort of task on each list item, altering the original list.
+    .map will go through a list and preform tasks on list items, but will return you a new list with the altered content.
 
 2. Explain the difference between a callback and a higher order function.
+    A higher order function is a function that takes other functions as arguments and then uses those functions within them.
+    Callback functions are functions that are passed in as arguments into higher order functions perameters. They are then used by the higher order functions.  
 
 3. What is closure?
+    Closure is a function enclosed with references to its lexical environment. This gives you hte ability to create private variables. Such as when you create a counterMaker function with a nested return function that has a counter variable that accesses the counterMakers count variable. 
 
 4. Describe the four rules of the 'this' keyword.
+    If the "new" keyword is used when calling the function, then "this" inside the function is a brand new object.
+
+    If apply, call, or bind are used to call a function, then "this" inside the function is the object that is passed in as the argument.
+
+    If a function is called as a method, then "this" is the object that the function is a property of. Tule of thumb: when a dot is to the left of a function invocation, then this is the object to the left of the dot.
+
+    If a function is invoked as a free function invocation (global), then this is the global object. (In a browser the window)
 
 5. Why do we need super() in an extended class?
+    We need super() in an extended class to inherit the methods from the parent class. It essentically acts as 
+    child.prototype = Object.create(Parent.prototype)
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
